@@ -1,0 +1,303 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:SparkProtectionSwitch-cache
+EELAYER 24 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MOS_N Q2
+U 1 1 5394B839
+P 5350 4450
+F 0 "Q2" H 5300 4650 60  0000 R CNN
+F 1 "IRFS7530" V 5550 4650 60  0000 R CNN
+F 2 "CRF1:D2PAK-7-GDS" H 5350 4450 60  0001 C CNN
+F 3 "" H 5350 4450 60  0000 C CNN
+	1    5350 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOS_N Q1
+U 1 1 5394B8C1
+P 4700 4450
+F 0 "Q1" H 4650 4650 60  0000 R CNN
+F 1 "IRFS7530" V 4900 4600 60  0000 R CNN
+F 2 "CRF1:D2PAK-7-GDS" H 4700 4450 60  0001 C CNN
+F 3 "" H 4700 4450 60  0000 C CNN
+	1    4700 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5394B921
+P 6650 4050
+F 0 "R2" V 6730 4050 40  0000 C CNN
+F 1 "1k" V 6657 4051 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6580 4050 30  0001 C CNN
+F 3 "" H 6650 4050 30  0000 C CNN
+	1    6650 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L C C1
+U 1 1 5394B9AA
+P 6100 4050
+F 0 "C1" V 6050 4150 40  0000 L CNN
+F 1 "1u/100V" V 6250 3900 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6138 3900 30  0001 C CNN
+F 3 "" H 6100 4050 60  0000 C CNN
+	1    6100 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 5394B9EE
+P 4050 3850
+F 0 "R1" V 4130 3850 40  0000 C CNN
+F 1 "1M" V 4057 3851 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3980 3850 30  0001 C CNN
+F 3 "" H 4050 3850 30  0000 C CNN
+	1    4050 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 4850 5750 4850
+Wire Wire Line
+	4800 4850 4800 4650
+Wire Wire Line
+	5450 4650 5450 4850
+Connection ~ 5450 4850
+Wire Wire Line
+	3650 4050 5900 4050
+Wire Wire Line
+	5150 4450 5050 4450
+Wire Wire Line
+	5050 4450 5050 4050
+Wire Wire Line
+	4500 4450 4450 4450
+Wire Wire Line
+	4450 4450 4450 4050
+Connection ~ 5050 4050
+Wire Wire Line
+	5450 4250 5450 3850
+Wire Wire Line
+	4800 3850 7050 3850
+Wire Wire Line
+	4800 3850 4800 4250
+$Comp
+L CONN_1 P5
+U 1 1 5394BB22
+P 7350 4050
+F 0 "P5" H 7430 4050 40  0000 L CNN
+F 1 "OUT-" H 7350 4105 30  0001 C CNN
+F 2 "CRF1:1PAD_6x5mm" H 7350 4050 60  0001 C CNN
+F 3 "" H 7350 4050 60  0000 C CNN
+	1    7350 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L CONN_1 P2
+U 1 1 5394BB57
+P 3200 4450
+F 0 "P2" H 3280 4450 40  0000 L CNN
+F 1 "IN-" H 3200 4505 30  0001 C CNN
+F 2 "CRF1:1PAD_6x5mm" H 3200 4450 60  0001 C CNN
+F 3 "" H 3200 4450 60  0000 C CNN
+	1    3200 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_1 P1
+U 1 1 5394BBA4
+P 3200 3650
+F 0 "P1" H 3280 3650 40  0000 L CNN
+F 1 "IN+" H 3200 3705 30  0001 C CNN
+F 2 "CRF1:1PAD_6x5mm" H 3200 3650 60  0001 C CNN
+F 3 "" H 3200 3650 60  0000 C CNN
+	1    3200 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_1 P4
+U 1 1 5394BBF2
+P 7350 3650
+F 0 "P4" H 7430 3650 40  0000 L CNN
+F 1 "OUT+" H 7350 3705 30  0001 C CNN
+F 2 "CRF1:1PAD_6x5mm" H 7350 3650 60  0001 C CNN
+F 3 "" H 7350 3650 60  0000 C CNN
+	1    7350 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 4250 4250 4850
+Wire Wire Line
+	4250 4450 3350 4450
+Connection ~ 4800 4850
+$Comp
+L ZENERsmall D2
+U 1 1 55A12D05
+P 5750 4500
+F 0 "D2" H 5750 4600 40  0000 C CNN
+F 1 "ZENERsmall" H 5750 4400 30  0000 C CNN
+F 2 "Diodes_SMD:Diode-SMA_Handsoldering" H 5750 4500 60  0001 C CNN
+F 3 "" H 5750 4500 60  0000 C CNN
+	1    5750 4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5750 4850 5750 4600
+$Comp
+L CONN_1 P3
+U 1 1 55A147BF
+P 3500 3850
+F 0 "P3" H 3580 3850 40  0000 L CNN
+F 1 "SW" H 3500 3905 30  0001 C CNN
+F 2 "CRF1:1PAD_4x5mm" H 3500 3850 60  0001 C CNN
+F 3 "" H 3500 3850 60  0000 C CNN
+	1    3500 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_1 P7
+U 1 1 55A14A13
+P 3500 4050
+F 0 "P7" H 3580 4050 40  0000 L CNN
+F 1 "12V_SW" H 3500 4105 30  0001 C CNN
+F 2 "CRF1:1PAD_4x5mm" H 3500 4050 60  0001 C CNN
+F 3 "" H 3500 4050 60  0000 C CNN
+	1    3500 4050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_1 P8
+U 1 1 55A14A98
+P 3500 4250
+F 0 "P8" H 3580 4250 40  0000 L CNN
+F 1 "12V_SW" H 3500 4305 30  0001 C CNN
+F 2 "CRF1:1PAD_4x5mm" H 3500 4250 60  0001 C CNN
+F 3 "" H 3500 4250 60  0000 C CNN
+	1    3500 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3800 3850 3650 3850
+Wire Wire Line
+	5750 4050 5750 4400
+$Comp
+L CONN_1 P9
+U 1 1 55BF68E3
+P 4350 3650
+F 0 "P9" H 4430 3650 40  0000 L CNN
+F 1 "FUSE_B" H 4350 3705 30  0001 C CNN
+F 2 "CRF1:1PAD_6x5mm" H 4350 3650 60  0001 C CNN
+F 3 "" H 4350 3650 60  0000 C CNN
+	1    4350 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_1 P6
+U 1 1 55BF6959
+P 3900 3650
+F 0 "P6" H 3980 3650 40  0000 L CNN
+F 1 "FUSE_A" H 3900 3705 30  0001 C CNN
+F 2 "CRF1:1PAD_6x5mm" H 3900 3650 60  0001 C CNN
+F 3 "" H 3900 3650 60  0000 C CNN
+	1    3900 3650
+	1    0    0    -1  
+$EndComp
+Connection ~ 4450 4050
+Text Notes 4000 3500 0    60   ~ 0
+Fuse
+Wire Wire Line
+	7050 3850 7050 4050
+Wire Wire Line
+	6900 4050 7200 4050
+Connection ~ 5450 3850
+Wire Wire Line
+	3650 4250 4250 4250
+Connection ~ 4250 4450
+Text Notes 7650 3900 0    60   ~ 0
+Out
+Text Notes 2950 4100 0    60   ~ 0
+Switch
+Text Notes 2750 4100 0    60   ~ 0
+In
+Wire Notes Line
+	3000 3650 2800 3650
+Wire Notes Line
+	2800 3650 2800 4000
+Wire Notes Line
+	3000 4450 2800 4450
+Wire Notes Line
+	2800 4450 2800 4150
+Wire Bus Line
+	3300 4050 3250 4050
+Wire Bus Line
+	3300 3850 3100 3850
+Wire Bus Line
+	3100 3850 3100 4000
+Wire Bus Line
+	3300 4250 3100 4250
+Wire Bus Line
+	3100 4250 3100 4100
+Connection ~ 7050 4050
+Wire Wire Line
+	6400 4050 6300 4050
+Connection ~ 5750 4050
+Wire Wire Line
+	4500 3650 7200 3650
+Wire Wire Line
+	4300 3850 4650 3850
+Wire Wire Line
+	4650 3850 4650 3650
+Connection ~ 4650 3650
+Wire Wire Line
+	3750 3650 3350 3650
+Wire Bus Line
+	7550 3650 7700 3650
+Wire Bus Line
+	7700 3650 7700 3750
+Wire Bus Line
+	7550 4050 7700 4050
+Wire Bus Line
+	7700 4050 7700 3950
+$EndSCHEMATC

@@ -1,0 +1,108 @@
+Cmp-Mod V01 Created by Cvpcb (2014-08-31 BZR 5107)-product   date = tor 20 aug 2015 12:33:29
+
+BeginCmp
+TimeStamp = /5394B9AA;
+Reference = C1;
+ValeurCmp = 1u/100V;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55A12D05;
+Reference = D2;
+ValeurCmp = ZENERsmall;
+IdModule  = Diodes_SMD:Diode-SMA_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /5394BBA4;
+Reference = P1;
+ValeurCmp = IN+;
+IdModule  = CRF1:1PAD_6x5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5394BB57;
+Reference = P2;
+ValeurCmp = IN-;
+IdModule  = CRF1:1PAD_6x5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /55A147BF;
+Reference = P3;
+ValeurCmp = SW;
+IdModule  = CRF1:1PAD_4x5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5394BBF2;
+Reference = P4;
+ValeurCmp = OUT+;
+IdModule  = CRF1:1PAD_6x5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5394BB22;
+Reference = P5;
+ValeurCmp = OUT-;
+IdModule  = CRF1:1PAD_6x5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /55BF6959;
+Reference = P6;
+ValeurCmp = FUSE_A;
+IdModule  = CRF1:1PAD_6x5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /55A14A13;
+Reference = P7;
+ValeurCmp = 12V_SW;
+IdModule  = CRF1:1PAD_4x5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /55A14A98;
+Reference = P8;
+ValeurCmp = 12V_SW;
+IdModule  = CRF1:1PAD_4x5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /55BF68E3;
+Reference = P9;
+ValeurCmp = FUSE_B;
+IdModule  = CRF1:1PAD_6x5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5394B8C1;
+Reference = Q1;
+ValeurCmp = IRFS7530;
+IdModule  = CRF1:D2PAK-7-GDS;
+EndCmp
+
+BeginCmp
+TimeStamp = /5394B839;
+Reference = Q2;
+ValeurCmp = IRFS7530;
+IdModule  = CRF1:D2PAK-7-GDS;
+EndCmp
+
+BeginCmp
+TimeStamp = /5394B9EE;
+Reference = R1;
+ValeurCmp = 1M;
+IdModule  = Resistors_SMD:R_0603_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /5394B921;
+Reference = R2;
+ValeurCmp = 1k;
+IdModule  = Resistors_SMD:R_0603_HandSoldering;
+EndCmp
+
+EndListe
